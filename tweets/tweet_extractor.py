@@ -19,8 +19,8 @@ class TweetExtractor:
     def get_tweets(
         self, tweets_number: int, language: str, hashtag: str = ""
     ) -> list[dict[str, str]]:
-        # gets all the tweets for a specific hashtag if no hashtag is provided, it will such provide
-        # as many tweets as specified without any specific looking pattern
+        """gets all the tweets for a specific hashtag if no hashtag is provided, it will such provide
+        as many tweets as specified without any specific looking pattern"""
         filter = " -filter:retweets"
 
         # Creating a cursor that can fetch multiple tweets
